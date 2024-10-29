@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Rescue</title>
-    <link rel="icon" href="img/favicon-500x500.png" />
+    <title>Merge Wonder Park</title>
+    <link rel="icon" href="image/favicon-500x500.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +23,19 @@
       href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -37,18 +50,21 @@
             <a href="/" class="navigation__link">Home</a>
           </li>
           <li class="navigation__item">
+            <a href="/#advantages" class="navigation__link">Game Description</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/#features" class="navigation__link">Unique Features</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/#play" class="navigation__link">How to Play</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/#faq" class="navigation__link">FAQ</a>
+          </li>
+          <li class="navigation__item">
             <a href="/#gallery" class="navigation__link">Gallery</a>
           </li>
-          <li class="navigation__item">
-            <a href="/#advantages" class="navigation__link">Advantages</a>
-          </li>
 
-          <li class="navigation__item">
-            <a href="/#reviews" class="navigation__link">Reviews</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/#about" class="navigation__link">About the Game</a>
-          </li>
           <li class="navigation__item navigation__item-desk">
             <a href="policy.html" class="navigation__link">Privacy Policy</a>
           </li>
@@ -76,172 +92,176 @@
       <section class="home" id="home">
         <div class="home__wrapper container">
           <div class="home__container-top">
-            <img
-              class="home__title-image"
-              src="img/home/Section-1-Hero.png"
-              alt=""
-            />
-
             <a
               class="home__google-button_link"
-              href="https://play.google.com/store/apps/details?id=air.com.idreaminteractive.reciperescue"
+              href="https://play.google.com/store/apps/details?id=com.zymobile.merge.wonder.park.gp"
               target="_blank"
             >
               <img
                 class="home__google-button_image"
-                src="./img/home/phone-button.png"
+                src="./image/home/Group.png"
                 alt=""
               />
             </a>
           </div>
-        </div>
-      </section>
-
-      <section class="reviews" id="gallery">
-        <h2 class="section--title reviews-title">Gallery</h2>
-
-        <div class="reviews__container">
-          <ul data-aos="fade-down" class="gallery__list">
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./img/gallery/image1.png"
-                alt=""
-              />
-            </li>
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./img/gallery/image2.png"
-                alt=""
-              />
-            </li>
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./img/gallery/image3.png"
-                alt=""
-              />
-            </li>
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./img/gallery/image4.png"
-                alt=""
-              />
-            </li>
-          </ul>
-
-          <button class="reviews__button--right gallery__button">
-            <img
-              class="reviews__button-icon"
-              src="./img/gallery/Controll.png"
-              alt=""
-            />
-          </button>
-        </div>
-
-        <div class="reviews__button-container">
-          <button class="reviews__button--right">
-            <img
-              class="reviews__button-icon"
-              src="./img/gallery/Controll.png"
-              alt=""
-            />
-          </button>
         </div>
       </section>
 
       <section class="advantages" id="advantages">
-        <h2 class="advantages-title">Advantages</h2>
+        <h2 class="visually-hidden">Advantages</h2>
 
         <div data-aos="fade-down" class="advantages__container">
-          <img class="advantages-image" src="img/adv/Frame 147.png" alt="" />
+          <img
+            class="advantages-image"
+            src="image/desc/Secrion-2-About the game.png"
+            alt=""
+          />
           <img
             class="advantages-image-desk"
-            src="img/adv/Secrion-3-Advantages.png"
+            src="image/desc/Secrion-2-About the game (1).png"
             alt=""
           />
         </div>
       </section>
 
-      <section class="reviews" id="reviews">
-        <div data-aos="fade-down" class="advantages__container">
+      <section class="features" id="features">
+        <h2 class="visually-hidden">features</h2>
+
+        <div data-aos="fade-down" class="features__container">
           <img
-            class="reviews-image"
-            src="img/reviews/Secrion-4-Reviews.png"
+            class="features-image"
+            src="image/Features/Secrion-3-Features.png"
             alt=""
           />
           <img
-            class="reviews-image-desk"
-            src="img/reviews/Secrion-4-Reviews (1).png"
-            alt=""
-          />
-        </div>
-      </section>
-      <section class="about-one" id="about">
-        <div data-aos="fade-down" class="advantages__container">
-          <img
-            class="about-one-image"
-            src="img/about-one/Secrion-5-About the game.png"
-            alt=""
-          />
-          <img
-            class="about-one-image-desk"
-            src="img//about-one/Secrion-5-About the game (1).png"
+            class="features-image-desk"
+            src="image/Features/Secrion-3-Features (1).png"
             alt=""
           />
         </div>
       </section>
 
-      <section class="about">
-        <h2 class="about__title">Ready to dive into a culinary adventure?</h2>
-        <div class="about__wrapper container">
-          <div class="about__wrapper--top">
-            <p class="about__text-bold">
-              Download "Recipe Rescue" now and start your journey in the
-              kitchen!
-            </p>
-            <p class="about__text">
-              Solve challenging puzzles, save delicious recipes, and discover
-              the joy of cooking.
-            </p>
-            <p class="about__text">
-              With vibrant graphics and endless fun, "Recipe Rescue" is your
-              ideal game for food lovers.
-            </p>
-            <p class="about__text">
-              Don’t miss out on the excitement – download today and let the
-              cooking adventure begin!
-            </p>
-          </div>
-          <div>
-            <img class="about-image-one" src="img/about/Image.png" alt="" />
-            <a
-              class="about__image-wrapper"
-              href="https://play.google.com/store/apps/details?id=air.com.idreaminteractive.reciperescue"
-              target="_blank"
-            >
+      <section class="play" id="play">
+        <img
+          class="play-image"
+          src="image/play/Secrion-4-How to Play (2).png"
+          alt=""
+        />
+
+        <div class="play__container">
+          <ul data-aos="fade-down" class="play__list">
+            <li class="play__item">
               <img
-                class="about-image-button"
-                src="./img/home/phone-button.png"
+                class="play__image"
+                src="./image/play/Action-01 (1).png"
                 alt=""
               />
-            </a>
-          </div>
+            </li>
+            <li class="play__item">
+              <img
+                class="play__image"
+                src="./image/play/Action-02.png"
+                alt=""
+              />
+            </li>
+            <li class="play__item">
+              <img
+                class="play__image"
+                src="./image/play/Action-03.png"
+                alt=""
+              />
+            </li>
+            <li class="play__item">
+              <img
+                class="play__image"
+                src="./image/play/Action-04.png"
+                alt=""
+              />
+            </li>
+            <li class="play__item">
+              <img
+                class="play__image"
+                src="./image/play/Action-05.png"
+                alt=""
+              />
+            </li>
+            <li class="play__item">
+              <img
+                class="play__image"
+                src="./image/play/Action-06.png"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
+        <img
+          class="play-image-desk"
+          src="image/play/Secrion-4-How to Play.png"
+          alt=""
+        />
       </section>
     </main>
+    <section class="features" id="faq">
+      <h2 class="visually-hidden">faq</h2>
+
+      <div data-aos="fade-down" class="features__container">
+        <a href="policy.html">
+          <img
+            class="features-image"
+            src="image/faq/Secrion-5-FAQ.png"
+            alt=""
+          />
+        </a>
+        <a href="policy.html">
+          <img
+            class="features-image-desk"
+            src="image/faq/Secrion-5-FAQ (1).png"
+            alt=""
+          />
+        </a>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <img
+        class="gallery-title"
+        src="./image/gallery/Secrion-6-Gallery.png"
+        alt=""
+      />
+
+      <div class="reviews__container">
+        <ul data-aos="fade-down" class="gallery__list">
+          <li class="gallery__item">
+            <img class="gallery__image" src="./image/gallery/img1.png" alt="" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./image/gallery/img2.png" alt="" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./image/gallery/img3.png" alt="" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./image/gallery/img4.png" alt="" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./image/gallery/img5.png" alt="" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./image/gallery/img6.png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="footer-container">
         <p class="footer-copyright">
-          All rights reserved coolprostart.com | 2024
+          All rights reserved proquestadventure.com | 2024
         </p>
         <div class="footer-wrapper">
           <a class="footer-text" href="policy.html">Privacy Policy</a>
           <a class="footer-texts"> / </a>
-          <a class="footer-text" href="terms.html">Terms of Service</a>
+          <a class="footer-text" href="terms.html">Terms & Conditions</a>
         </div>
       </div>
     </footer>
