@@ -23,7 +23,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+const playList = document.querySelector('.play__list');
+const mediaQuery = window.matchMedia('(min-width: 1200px)');
 
+function handleScreenChange(e) {
+  if (e.matches) {
+    playList?.classList.remove('play__list');
+     playList?.classList.add('play__list-desk');
+  } else {
+    playList?.classList.add('play__list');
+    playList?.classList.remove('play__list-desk');
+  }
+}
+
+mediaQuery.addEventListener('change', handleScreenChange);
+handleScreenChange(mediaQuery); 
+
+
+
+function toggleAnswer(element) {
+  const answer = element.nextElementSibling;
+  const button = element.querySelector(".toggle-button");
+  
+  if (answer.style.display === "none" || answer.style.display === "") {
+    answer.style.display = "block";
+    button.textContent = "-";
+  } else {
+    answer.style.display = "none";
+    button.textContent = "+";
+  }
+}
 
 
 
